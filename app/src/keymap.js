@@ -3,6 +3,10 @@ import keyBy from 'lodash/keyBy'
 export { loadKeymap } from './api'
 
 export function getBehaviourParams(parsedParams, behaviour) {
+  if (!behaviour) {
+    return []
+  }
+
   const firstParsedParam = get(parsedParams, '[0]', {})
   const commands = keyBy(behaviour.commands, 'code')
   return [].concat(

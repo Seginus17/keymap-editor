@@ -198,5 +198,25 @@
     "code": "&none",
     "name": "None",
     "params": []
+  },
+  {
+    "code": "&interogation",
+    "name": "Interrogation (mod-morph ? / !)",
+    "params": []
+  },
+  {
+    "code": "&accentcirc",
+    "name": "Accent circonflexe (macro)",
+    "params": ["code"]
+  },
+  {
+    "code": "&trema",
+    "name": "Tréma (macro)",
+    "params": ["code"]
+  },
+  {
+    "code": "&mtlayer",
+    "name": "Mod-tap layer (hold: mo / tap: to)",
+    "params": ["layer", "layer"]
   }
 ]

@@ -2,6 +2,7 @@ const process = require('process')
 require('dotenv/config')
 
 const PORT = process.env.PORT || 8080
+const APP_PORT = process.env.APP_PORT
 const ENABLE_DEV_SERVER = process.env.ENABLE_DEV_SERVER
 const ENABLE_GITHUB = process.env.ENABLE_GITHUB
 const GITHUB_APP_NAME = process.env.GITHUB_APP_NAME
@@ -14,6 +15,7 @@ const APP_BASE_URL = process.env.APP_BASE_URL
 
 module.exports = {
   PORT,
+  APP_PORT,
   ENABLE_DEV_SERVER,
   ENABLE_GITHUB,
   GITHUB_APP_NAME,
