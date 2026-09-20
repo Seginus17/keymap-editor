@@ -8,3 +8,7 @@ export const DefinitionsContext = createContext({
 export const SearchContext = createContext({
   getSearchTargets: null
 })
+
+export const KeyboardLocaleContext = createContext({
+  locale: 'raw'
+})

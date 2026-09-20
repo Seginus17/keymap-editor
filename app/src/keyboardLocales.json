@@ -1,0 +1,257 @@
+{
+  "A": {
+    "azerty": "q",
+    "bepo": "a",
+    "qwerty": "a"
+  },
+  "APOS": {
+    "azerty": "ù",
+    "bepo": "m",
+    "qwerty": "'"
+  },
+  "APOSTROPHE": {
+    "azerty": "ù",
+    "bepo": "m",
+    "qwerty": "'"
+  },
+  "B": {
+    "azerty": "b",
+    "bepo": "k",
+    "qwerty": "b"
+  },
+  "BACKSLASH": {
+    "azerty": "*",
+    "bepo": "ç",
+    "qwerty": "\\"
+  },
+  "C": {
+    "azerty": "c",
+    "bepo": "x",
+    "qwerty": "c"
+  },
+  "COMMA": {
+    "azerty": ";",
+    "bepo": "g",
+    "qwerty": ","
+  },
+  "D": {
+    "azerty": "d",
+    "bepo": "i",
+    "qwerty": "d"
+  },
+  "DOT": {
+    "azerty": ":",
+    "bepo": "h",
+    "qwerty": "."
+  },
+  "E": {
+    "azerty": "e",
+    "bepo": "p",
+    "qwerty": "e"
+  },
+  "EQUAL": {
+    "azerty": "=",
+    "bepo": "%",
+    "qwerty": "="
+  },
+  "F": {
+    "azerty": "f",
+    "bepo": "e",
+    "qwerty": "f"
+  },
+  "FSLH": {
+    "azerty": "!",
+    "bepo": "f",
+    "qwerty": "/"
+  },
+  "G": {
+    "azerty": "g",
+    "bepo": ",",
+    "qwerty": "g"
+  },
+  "GRAVE": {
+    "azerty": "²",
+    "bepo": "$",
+    "qwerty": "`"
+  },
+  "H": {
+    "azerty": "h",
+    "bepo": "c",
+    "qwerty": "h"
+  },
+  "I": {
+    "azerty": "i",
+    "bepo": "d",
+    "qwerty": "i"
+  },
+  "J": {
+    "azerty": "j",
+    "bepo": "t",
+    "qwerty": "j"
+  },
+  "K": {
+    "azerty": "k",
+    "bepo": "s",
+    "qwerty": "k"
+  },
+  "L": {
+    "azerty": "l",
+    "bepo": "r",
+    "qwerty": "l"
+  },
+  "LBKT": {
+    "azerty": "^*",
+    "bepo": "z",
+    "qwerty": "["
+  },
+  "M": {
+    "azerty": ",",
+    "bepo": "q",
+    "qwerty": "m"
+  },
+  "MINUS": {
+    "azerty": ")",
+    "bepo": "=",
+    "qwerty": "-"
+  },
+  "N": {
+    "azerty": "n",
+    "bepo": "'",
+    "qwerty": "n"
+  },
+  "N0": {
+    "azerty": "à",
+    "bepo": "*",
+    "qwerty": "0"
+  },
+  "N1": {
+    "azerty": "&",
+    "bepo": "\"",
+    "qwerty": "1"
+  },
+  "N2": {
+    "azerty": "é",
+    "bepo": "«",
+    "qwerty": "2"
+  },
+  "N3": {
+    "azerty": "\"",
+    "bepo": "»",
+    "qwerty": "3"
+  },
+  "N4": {
+    "azerty": "'",
+    "bepo": "(",
+    "qwerty": "4"
+  },
+  "N5": {
+    "azerty": "(",
+    "bepo": ")",
+    "qwerty": "5"
+  },
+  "N6": {
+    "azerty": "-",
+    "bepo": "@",
+    "qwerty": "6"
+  },
+  "N7": {
+    "azerty": "è",
+    "bepo": "+",
+    "qwerty": "7"
+  },
+  "N8": {
+    "azerty": "_",
+    "bepo": "-",
+    "qwerty": "8"
+  },
+  "N9": {
+    "azerty": "ç",
+    "bepo": "/",
+    "qwerty": "9"
+  },
+  "O": {
+    "azerty": "o",
+    "bepo": "l",
+    "qwerty": "o"
+  },
+  "P": {
+    "azerty": "p",
+    "bepo": "j",
+    "qwerty": "p"
+  },
+  "PERIOD": {
+    "azerty": ":",
+    "bepo": "h",
+    "qwerty": "."
+  },
+  "Q": {
+    "azerty": "a",
+    "bepo": "b",
+    "qwerty": "q"
+  },
+  "R": {
+    "azerty": "r",
+    "bepo": "o",
+    "qwerty": "r"
+  },
+  "RBKT": {
+    "azerty": "$",
+    "bepo": "w",
+    "qwerty": "]"
+  },
+  "S": {
+    "azerty": "s",
+    "bepo": "u",
+    "qwerty": "s"
+  },
+  "SEMI": {
+    "azerty": "m",
+    "bepo": "n",
+    "qwerty": ";"
+  },
+  "SEMICOLON": {
+    "azerty": "m",
+    "bepo": "n",
+    "qwerty": ";"
+  },
+  "SLASH": {
+    "azerty": "!",
+    "bepo": "f",
+    "qwerty": "/"
+  },
+  "T": {
+    "azerty": "t",
+    "bepo": "è",
+    "qwerty": "t"
+  },
+  "U": {
+    "azerty": "u",
+    "bepo": "v",
+    "qwerty": "u"
+  },
+  "V": {
+    "azerty": "v",
+    "bepo": ".",
+    "qwerty": "v"
+  },
+  "W": {
+    "azerty": "z",
+    "bepo": "é",
+    "qwerty": "w"
+  },
+  "X": {
+    "azerty": "x",
+    "bepo": "y",
+    "qwerty": "x"
+  },
+  "Y": {
+    "azerty": "y",
+    "bepo": "^*",
+    "qwerty": "y"
+  },
+  "Z": {
+    "azerty": "w",
+    "bepo": "à",
+    "qwerty": "z"
+  }
+}

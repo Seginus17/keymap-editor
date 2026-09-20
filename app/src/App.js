@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react'
 
 import * as config from './config'
 import './App.css';
-import { DefinitionsContext } from './providers'
+import { DefinitionsContext, KeyboardLocaleContext } from './providers'
 import { loadKeycodes } from './keycodes'
 import { loadBehaviours } from './api'
 import KeyboardPicker from './Pickers/KeyboardPicker';
@@ -22,6 +22,21 @@ function App() {
   const [keymap, setKeymap] = useState(null)
   const [editingKeymap, setEditingKeymap] = useState(null)
   const [saving, setSaving] = useState(false)
+  const [keyboardLocale, setKeyboardLocale] = useState(() => {
+    try {
+      return window.localStorage.getItem('keyboardLocale') || 'raw'
+    } catch {
+      return 'raw'
+    }
+  })
+
+  function handleKeyboardLocaleChange(event) {
+    const locale = event.target.value
+    setKeyboardLocale(locale)
+    try {
+      window.localStorage.setItem('keyboardLocale', locale)
+    } catch {}
+  }
 
   function handleCompile() {
     fetch(`${config.apiBaseUrl}/keymap`, {
@@ -92,6 +107,15 @@ function App() {
       <Loader load={initialize}>
         <KeyboardPicker onSelect={handleKeyboardSelected} />
         <div id="actions">
+          <label>
+            Clavier système :{' '}
+            <select value={keyboardLocale} onChange={handleKeyboardLocaleChange}>
+              <option value="raw">Brut (nom de la touche ZMK)</option>
+              <option value="qwerty">Qwerty</option>
+              <option value="azerty">Azerty (FR)</option>
+              <option value="bepo">Bépo (FR)</option>
+            </select>
+          </label>
           {source === 'local' && (
             <button disabled={!editingKeymap} onClick={handleCompile}>
               Save Local
@@ -109,13 +133,15 @@ function App() {
           )}
         </div>
         <DefinitionsContext.Provider value={definitions}>
-          {layout && keymap && (
-            <Keyboard
-              layout={layout}
-              keymap={editingKeymap || keymap}
-              onUpdate={handleUpdateKeymap}
-            />
-          )}
+          <KeyboardLocaleContext.Provider value={{ locale: keyboardLocale }}>
+            {layout && keymap && (
+              <Keyboard
+                layout={layout}
+                keymap={editingKeymap || keymap}
+                onUpdate={handleUpdateKeymap}
+              />
+            )}
+          </KeyboardLocaleContext.Provider>
         </DefinitionsContext.Provider>
       </Loader>
       <GitHubLink className="github-link" />

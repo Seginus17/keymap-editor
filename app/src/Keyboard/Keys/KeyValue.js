@@ -1,9 +1,11 @@
-import { useMemo } from 'react'
+import { useContext, useMemo } from 'react'
 import PropTypes from 'prop-types'
 
 import * as keyPropTypes from './keyPropTypes'
 import styles from './styles.module.css'
 import Icon from '../../Common/Icon'
+import { KeyboardLocaleContext } from '../../providers'
+import keyboardLocales from '../../keyboardLocales.json'
 
 function NullKey() {
   return <span>⦸</span>
@@ -11,9 +13,11 @@ function NullKey() {
 
 function KeyValue(props) {
   const { param, index, value, source, onSelect } = props
+  const { locale } = useContext(KeyboardLocaleContext)
   const title = source && `(${source.code}) ${source.description}`
-  const text = source && (source?.symbol || source?.code)
-  const icon = source?.faIcon && <Icon name={source.faIcon} />
+  const localized = source && locale !== 'raw' && keyboardLocales[source.code]?.[locale]
+  const text = source && (localized || source?.symbol || source?.code)
+  const icon = !localized && source?.faIcon && <Icon name={source.faIcon} />
 
   const handleClick = useMemo(() => function (event) {
     event.stopPropagation()
